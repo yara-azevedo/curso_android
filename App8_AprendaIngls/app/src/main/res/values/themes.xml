@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.App8_AprendaInglês" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#795548</item> -->
+        <item name="colorPrimaryDark">#5d4037</item>
+        <item name="colorAccent">#a06451</item>
+    </style>
+
+    <style name="Theme.App8_AprendaInglês" parent="Base.Theme.App8_AprendaInglês" />
+</resources>
