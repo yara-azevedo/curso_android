@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/um"
+        android:title="Opção 1"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_360_24"
+        />
+    <item
+        android:id="@+id/dois"
+        android:title="Opção 2"
+        />
+    <item
+        android:id="@+id/tres"
+        android:title="Opção 3"
+        />
+</menu>

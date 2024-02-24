@@ -1,10 +1,12 @@
-package com.cursoandroid.app10_listatarefas;
+package com.cursoandroid.app10_listatarefas.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.cursoandroid.app10_listatarefas.R;
 
 public class AdicionarActivity extends AppCompatActivity {
 
