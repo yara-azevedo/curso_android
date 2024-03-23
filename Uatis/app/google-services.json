@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952978736353",
+    "project_id": "uatis-9c710",
+    "storage_bucket": "uatis-9c710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952978736353:android:5dfabb7b9d54c42d9323a0",
+        "android_client_info": {
+          "package_name": "com.cursoandroid.uatis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUDVM-ysxhwuIGuLwjE7Kw71kd4LQiDeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

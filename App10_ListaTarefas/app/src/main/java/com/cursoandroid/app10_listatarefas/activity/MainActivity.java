@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,9 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.cursoandroid.app10_listatarefas.R;
-import com.cursoandroid.app10_listatarefas.RecyclerItemClickListener;
+import com.cursoandroid.app10_listatarefas.helper.DAO;
+import com.cursoandroid.app10_listatarefas.helper.DBHelper;
+import com.cursoandroid.app10_listatarefas.helper.RecyclerItemClickListener;
 import com.cursoandroid.app10_listatarefas.adapter.Adapter;
 import com.cursoandroid.app10_listatarefas.model.Tarefa;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         fob = findViewById(R.id.floatingActionButton);
         recyclerView = findViewById(R.id.recyclerView);
 
+
+
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -71,9 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void lista(){
 
-        Tarefa tarefa1 = new Tarefa();
-        tarefa1.setNome("A");
-        tarefaList.add(tarefa1);
+        DAO dao= new DAO(getApplicationContext());
+        tarefaList = dao.listar();
 
         adapter = new Adapter(tarefaList);
 

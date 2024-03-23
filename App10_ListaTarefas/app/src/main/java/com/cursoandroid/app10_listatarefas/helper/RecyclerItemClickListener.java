@@ -1,4 +1,4 @@
-package com.cursoandroid.app10_listatarefas;
+package com.cursoandroid.app10_listatarefas.helper;
 
 import android.content.Context;
 import android.view.GestureDetector;
