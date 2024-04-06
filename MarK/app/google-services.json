@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "663215616125",
+    "project_id": "mark-ce365",
+    "storage_bucket": "mark-ce365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663215616125:android:76d437594e3a79f56f0114",
+        "android_client_info": {
+          "package_name": "com.cursoandroid.mark"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjpl5ZBvzv7OZM2rS9HrKtnM3nqj9WHeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

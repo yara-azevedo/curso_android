@@ -1,13 +1,18 @@
 package com.cursoandroid.uatis.Activity;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.cursoandroid.uatis.Helper.Permissoes;
 import com.cursoandroid.uatis.Helper.Preferencias;
 import com.cursoandroid.uatis.R;
 
@@ -20,10 +25,15 @@ public class LoginActivity extends AppCompatActivity {
     private EditText telefone, nome;
     private Button cadastrar;
 
+    private String[] permissoesNecessarias= new String[]{Manifest.permission.SEND_SMS};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Permissoes.validaPermissoes(1,this,permissoesNecessarias);
 
         finAll();
         cadastrar();
@@ -68,6 +78,29 @@ public class LoginActivity extends AppCompatActivity {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        for(int resultado : grantResults){
+            if(resultado == PackageManager.PERMISSION_DENIED){
+                alertaValidacaoPermissao();
+            }
+        }
+    }
+
+    private void alertaValidacaoPermissao() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+        builder.setTitle("Permissão Negada");
+        builder.setMessage("Aceite as permissões");
+        builder.setPositiveButton("Confirmar", (dialogInterface, i) -> {
+
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
     }
 
 
