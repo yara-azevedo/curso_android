@@ -1,64 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B1B1B"
-    tools:context=".Activity.LoginActivity">
+    tools:context=".activity.LoginActivity"
+    android:background="@color/black">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="202dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="210dp"
-        android:layout_marginBottom="521dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="371dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="180dp">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center|center_horizontal"
-            android:src="@drawable/logo" />
+            android:layout_height="163dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:foregroundGravity="center_vertical|center_horizontal" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:hint="Digite seu nome"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/white" />
 
-            <EditText
-                android:id="@+id/et_nome"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Digite seu nome"
-                android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="#9A9696" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:hint="+55"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/white" />
 
-            <EditText
-                android:id="@+id/et_telefone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Digite seu telefone (5511000000000)"
-                android:inputType="phone"
-                android:textColor="@color/white"
-                android:textColorHint="#9A9696" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_toEndOf="@+id/editText2"
+            android:layout_toRightOf="@+id/editText2"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:hint="11"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/white" />
 
-            <Button
-                android:id="@+id/bt_cadastrar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="cadastrar"
-                android:text="Cadastrar" />
-        </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/dt_telefone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editText3"
+            android:layout_toEndOf="@+id/editText3"
+            android:layout_toRightOf="@+id/editText3"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:hint="995855253"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimaryDark"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:text="Cadastrar"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

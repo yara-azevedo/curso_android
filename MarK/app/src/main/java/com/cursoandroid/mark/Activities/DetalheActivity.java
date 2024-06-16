@@ -19,12 +19,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cursoandroid.mark.R;
 
 public class DetalheActivity extends AppCompatActivity {
-    EditText et_titulo, et_genero, et_lancamento, et_avaliacao, et_comentario, et_tipo, et_temporada;
-    ImageButton saveBtn;
+    EditText et_titulo, et_genero, et_ano, et_nota, et_comentario, et_tipo, et_temporada;
+    ImageButton btn_save;
     TextView pageTitleTextView;
-    String titulo, genero, lancamento, avaliacao, comentario,tipo,docId, temporada;
+    String titulo,genero, ano, temporada, nota, comentario,tipo,docId;
     boolean isEditMode = false;
-    TextView deleteTextViewBtn, saveTextViewBtn;
+    TextView btn_delete, btn_salvar;
     RadioGroup rd_group;
     RadioButton rb_filme, rb_serie,rb_livro, rb_jogo;
     RatingBar ratingBar;
@@ -45,8 +45,8 @@ public class DetalheActivity extends AppCompatActivity {
         //receive data
         titulo = getIntent().getStringExtra("titulo");
         genero = getIntent().getStringExtra("genero");
-        lancamento = getIntent().getStringExtra("lancamento");
-        avaliacao = getIntent().getStringExtra("avaliacao");
+        ano = getIntent().getStringExtra("ano");
+        nota = getIntent().getStringExtra("nota");
         comentario = getIntent().getStringExtra("comentario");
         temporada = getIntent().getStringExtra("temporada");
         tipo = getIntent().getStringExtra("tipo");
@@ -57,14 +57,14 @@ public class DetalheActivity extends AppCompatActivity {
         }
         et_titulo.setText(titulo);
         et_genero.setText(genero);
-        et_lancamento.setText(lancamento);
+        et_ano.setText(ano);
         et_tipo.setText(tipo);
-        et_avaliacao.setText(avaliacao);
-        et_comentario.setText(comentario);
+        et_nota.setText(nota);
+//        et_comentario.setText(comentario);
         if(isEditMode){
             ll_optional.setVisibility(View.VISIBLE);
             pageTitleTextView.setText("marKaí: A EDIÇÃO");
-            deleteTextViewBtn.setVisibility(View.VISIBLE);
+            btn_delete.setVisibility(View.VISIBLE);
             ratingBar.setVisibility(GONE);
             rd_group.setVisibility(GONE);
         }else{
@@ -73,17 +73,18 @@ public class DetalheActivity extends AppCompatActivity {
             et_tipo.setVisibility(GONE);*/
         }
 
-        saveTextViewBtn.setOnClickListener( (v)-> saveConteudo());
+        btn_salvar.setOnClickListener( (v)-> saveConteudo());
 
     }
 
     void saveConteudo(){
 
         String conteudoTitulo = et_titulo.getText().toString();
-        String conteudoGenero = et_genero.getText().toString();
-        String conteudoLancamento = et_lancamento.getText().toString();
         String conteudoTipo = et_tipo.getText().toString();
-        Double conteudoAvaliacao = Double.parseDouble(et_avaliacao.getText().toString());
+        Double conteudoNota = Double.parseDouble(et_nota.getText().toString());
+        String conteudoGenero = et_genero.getText().toString();
+        String conteudoAno = et_ano.getText().toString();
+        String conteudoTemporada = et_temporada.getText().toString();
         String conteudoComentario = et_comentario.getText().toString();
 
 
@@ -91,7 +92,7 @@ public class DetalheActivity extends AppCompatActivity {
         if(conteudoTitulo==null || conteudoTitulo.isEmpty() ){
             Toast.makeText(this, "O título é obrigatório", Toast.LENGTH_SHORT).show();
             return;
-        } else if(conteudoAvaliacao>10){
+        } else if(conteudoNota>10){
             Toast.makeText(this, "10 é a nota máxima", Toast.LENGTH_SHORT).show();
             return;
         }else if(conteudoTipo==null || conteudoTitulo.isEmpty()) {
@@ -107,10 +108,10 @@ public class DetalheActivity extends AppCompatActivity {
 
 
     public void rating(){
+        ratingBar = findViewById(R.id.ratingBar);
         ratingBar.setOnRatingBarChangeListener((ratingBar, v, b) -> {
             String notaa = String.valueOf(ratingBar.getRating());
-           // Toast.makeText(getApplicationContext(), notaa, Toast.LENGTH_SHORT).show();
-            et_avaliacao.setText(notaa);
+            et_nota.setText(notaa);
         });
 
     }
@@ -125,31 +126,28 @@ public class DetalheActivity extends AppCompatActivity {
 
         });
 
-        rb_serie.setOnClickListener(v -> {
-            et_temporada.setVisibility(View.VISIBLE);
-        });
+        rb_serie.setOnClickListener(v -> et_temporada.setVisibility(View.VISIBLE));
     }
 
 
     public void find(){
-        et_titulo = findViewById(R.id.conteudo_titulo);
-        et_genero = findViewById(R.id.conteudo_genero);
-        et_lancamento = findViewById(R.id.et_temporada);
-        et_avaliacao = findViewById(R.id.conteudo_avaliacao);
-        et_comentario = findViewById(R.id.txt_coment);
-        et_tipo = findViewById(R.id.conteudo_tipo);
-        ratingBar = findViewById(R.id.ratingBar);
-        et_temporada = findViewById(R.id.et_temporada);
+       et_titulo = findViewById(R.id.et_titulo);
+       et_tipo   = findViewById(R.id.et_tipo);
+       et_nota   = findViewById(R.id.et_nota);
+       et_genero = findViewById(R.id.et_genero);
+       et_ano    = findViewById(R.id.et_ano);
+       et_temporada = findViewById(R.id.et_temporada);
 
-        pageTitleTextView = findViewById(R.id.page_title);
-        deleteTextViewBtn  = findViewById(R.id.delete_text_view);
-        saveTextViewBtn  = findViewById(R.id.salvar_text_view2);
-        rd_group = findViewById(R.id.rd_group);
-        rb_filme = findViewById(R.id.rb_filme);
-        rb_serie = findViewById(R.id.rb_serie);
-        rb_livro = findViewById(R.id.rb_livro);
+       pageTitleTextView = findViewById(R.id.page_title);
+       btn_delete  = findViewById(R.id.delete_text_view);
+       btn_salvar  = findViewById(R.id.salvar_text_view2);
 
-        ll_optional = findViewById(R.id.ll_tiutulo_nota);
+       rd_group = findViewById(R.id.rd_group);
+       rb_filme = findViewById(R.id.rb_filme);
+       rb_serie = findViewById(R.id.rb_serie);
+       rb_livro = findViewById(R.id.rb_livro);
+
+       ll_optional = findViewById(R.id.ll_tiutulo_nota);
 
     }
 

@@ -58,6 +58,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
@@ -105,7 +106,7 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/conteudo_titulo"
+                    android:id="@+id/et_titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp"
@@ -124,7 +125,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/conteudo_tipo"
+                        android:id="@+id/et_tipo"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="5dp"
@@ -135,7 +136,7 @@
                         android:textSize="15sp" />
 
                     <EditText
-                        android:id="@+id/conteudo_avaliacao"
+                        android:id="@+id/et_nota"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="5dp"
@@ -153,7 +154,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/conteudo_genero"
+                        android:id="@+id/et_genero"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="5dp"
@@ -163,18 +164,30 @@
                         android:textColorHint="@color/black"
                         android:textSize="15sp" />
 
-                    <com.vicmikhailau.maskededittext.MaskedEditText
+                    <EditText
+                        android:id="@+id/et_ano"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:hint="Ano"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
                         android:id="@+id/et_temporada"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="5dp"
-                        android:hint="Lançamento"
-                        android:inputType="date"
+                        android:layout_weight="1"
+                        android:hint="Temp"
                         android:padding="12dp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
-                        android:textSize="15sp"
-                        app:mask="####" />
+                        android:textSize="15sp" />
+
                 </LinearLayout>
 
 
@@ -182,30 +195,20 @@
                     android:id="@+id/ll_star_temp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <RatingBar
                         android:id="@+id/ratingBar"
                         android:layout_width="wrap_content"
                         android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
                         android:isIndicator="false"
                         android:max="5"
                         android:numStars="5"
                         android:secondaryProgressTint="#000000" />
 
-                    <com.vicmikhailau.maskededittext.MaskedEditText
-                        android:id="@+id/et_temporada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="5dp"
-                        android:hint="Temp"
-                        android:inputType="number"
-                        android:padding="12dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="15sp"
-                        android:visibility="gone"
-                        app:mask="####" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -227,7 +230,7 @@
                             android:orientation="horizontal">
 
                             <EditText
-                                android:id="@+id/txt_coment"
+                                android:id="@+id/et_coment"
                                 android:layout_width="275dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginVertical="8dp"
