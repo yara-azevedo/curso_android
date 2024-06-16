@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#0b6156</color>
+    <color name="colorPrimaryDark">#0a5048</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Uatis</string>
+    <string name="gcm_defaultSenderId" translatable="false">837315397527</string>
+    <string name="google_api_key" translatable="false">AIzaSyCJH1iKCS7gZ6Dw7oi5XBOth16VCN2C-n4</string>
+    <string name="google_app_id" translatable="false">1:837315397527:android:89c493fdb8a362a34ca6d2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCJH1iKCS7gZ6Dw7oi5XBOth16VCN2C-n4</string>
+    <string name="google_storage_bucket" translatable="false">uatis-b192a.appspot.com</string>
+    <string name="project_id" translatable="false">uatis-b192a</string>
+    <style name="Base.Theme.Uatis" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="Theme.Uatis" parent="Base.Theme.Uatis"/>
+</resources>
