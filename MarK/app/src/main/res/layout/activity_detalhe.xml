@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/d4"
+    android:background="#0E1227"
     android:padding="16dp"
     android:visibility="visible"
     tools:context=".Activities.DetalheActivity">
@@ -242,12 +242,13 @@
                                 android:textColorHint="@color/black"
                                 android:textSize="15sp" />
 
-                            <Button
-                                android:id="@+id/btn_coment"
+                            <ImageView
+                                android:id="@+id/imageView2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:layout_weight="1"
-                                app:icon="@drawable/icon" />
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/icon" />
 
                         </LinearLayout>
                     </ScrollView>

@@ -12,6 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="62dp"
         android:padding="10dp"
+
         app:layout_constraintBottom_toTopOf="@+id/count_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +92,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="90dp"
         android:background="@drawable/borda"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#28292C"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
@@ -109,15 +110,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Filmes"
-                android:textColor="@color/d1"
-
                 android:textAlignment="center"
+
                 android:textAllCaps="false"
+                android:textColor="@color/d1"
                 android:textIsSelectable="false" />
 
             <TextView
@@ -135,7 +136,6 @@
         </LinearLayout>
 
 
-
         <LinearLayout
             android:id="@+id/linear_count_livro"
             android:layout_width="wrap_content"
@@ -147,14 +147,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Livros"
-                android:textColor="@color/d3"
                 android:textAlignment="center"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
                 android:textIsSelectable="false" />
 
             <TextView
@@ -165,7 +165,7 @@
                 android:text="-"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/d3"
+                android:textColor="@color/white"
                 android:textIsSelectable="false"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -187,9 +187,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Séries"
-                android:textColor="@color/d4"
                 android:textAlignment="center"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
                 android:textIsSelectable="false" />
 
             <TextView
@@ -200,7 +200,7 @@
                 android:text="-"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/d4"
+                android:textColor="@color/white"
                 android:textIsSelectable="false"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -213,15 +213,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#28292C"
+        android:background="@drawable/borda2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/count_layout"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_note_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:backgroundTint="@color/white"
         android:padding="10dp"
         android:src="@drawable/add_icon"
