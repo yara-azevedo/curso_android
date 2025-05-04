@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                                                                        "ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                                                                         "nome VARCHAR(20)," +
                                                                         "idade INT(2))");
-            sqLiteDatabase.execSQL("DROP TABLE pessoa");
+           // sqLiteDatabase.execSQL("DROP TABLE pessoa");
             //inserir
             sqLiteDatabase.execSQL("INSERT INTO pessoa(nome, idade) VALUES ('Aaaa', 12)");
             sqLiteDatabase.execSQL("INSERT INTO pessoa(nome, idade) VALUES ('Bbbbb', 7)");
@@ -32,9 +32,8 @@ public class MainActivity extends AppCompatActivity {
             sqLiteDatabase.execSQL("UPDATE pessoa set idade = 18 where nome ='ddd'");
             sqLiteDatabase.execSQL("DELETE FROM pessoa WHERE nome ='ddd'");
 
-
             //recuperar
-            String consulta= "SELECT * FROM pessoa WHERE 'Aaaa'";
+            String consulta= "SELECT * FROM pessoa WHERE nome ='Aaaa'";
 
             Cursor cursor = sqLiteDatabase.rawQuery(consulta,  null);
             int indiceID = cursor.getColumnIndex("id");
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             while(cursor != null){
                 String nome = cursor.getString(indice);
                 String idade = cursor.getString(indiceI);
-                Log.i("Resultado - nome: ",nome + " idade" +idade );
+                Log.i("Resultado - nome: ",nome+" "+ " idade" +idade );
                 cursor.moveToNext();
             }
 
