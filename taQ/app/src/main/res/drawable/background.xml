@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="640dp"
+    android:viewportWidth="360"
+    android:viewportHeight="740">
+
+    <!-- Onda superior -->
+    <path
+        android:fillColor="#00C6FF"
+        android:pathData="M0,200 C90,150 270,250 360,200 L360,0 L0,0 Z"/>
