@@ -7,6 +7,9 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Circle;
+import com.badlogic.gdx.math.Intersector;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 import java.util.Random;
@@ -14,103 +17,138 @@ import java.util.Random;
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class FlappyBird extends ApplicationAdapter {
 
+
     private SpriteBatch batch;
-    private Texture[] passaro;
+    private Texture[] passaros;
     private Texture fundo;
     private Texture canoBaixo;
-    private Texture canoAlto;
+    private Texture canoTopo;
+    private Random numeroRandomico;
+    private BitmapFont fonte;
+    private Circle passaroCirculo;
+    private Rectangle retanguloCanoTopo;
+    private Rectangle retanguloCanoBaixo;
+    //private ShapeRenderer shape;
 
-    //atributos de config
-    private int largura;
-    private int altura;
+    //Atributos de configuracao
+    private int larguraDispositivo;
+    private int alturaDispositivo;
+    private int estadoJogo=0;// 0-> jogo não iniciado 1-> jogo iniciado
+    private int pontuacao=0;
 
     private float variacao = 0;
-    private float velocidadeQueda =0;
+    private float velocidadeQueda=0;
     private float posicaoInicialVertical;
-    private float posicaoMovimentoCanoH;
+    private float posicaoMovimentoCanoHorizontal;
     private float espacoEntreCanos;
     private float deltaTime;
-    private Random random;
-    private float alturaEntreCanosRandom;
-    private int estadoJogo =0; //o= nao iniciado 1=iniciado
-    private BitmapFont fonte;
-    private int pontuacao =0;
+    private float alturaEntreCanosRandomica;
     private boolean marcouPonto=false;
 
-
-
     @Override
-    public void create() {
+    public void create () {
+
         batch = new SpriteBatch();
-
-        random = new Random();
-        passaro = new Texture[3];
-        passaro[0] = new Texture("passaro1.png");
-        passaro[1] = new Texture("passaro2.png");
-        passaro[2] = new Texture("passaro3.png");
-
-        fundo = new Texture("fundo.png");
-
-        canoBaixo = new Texture("cano_baixo.png");
-        canoAlto = new Texture("cano_topo.png");
-
-        altura = Gdx.graphics.getHeight();
-        largura = Gdx.graphics.getWidth();
-        posicaoInicialVertical = altura/2;
-        posicaoMovimentoCanoH = largura;
-        espacoEntreCanos=300;
-        alturaEntreCanosRandom = random.nextInt(400)-200;
-
+        numeroRandomico = new Random();
+        passaroCirculo = new Circle();
+        /*retanguloCanoTopo = new Rectangle();
+        retanguloCanoBaixo = new Rectangle();
+        shape = new ShapeRenderer();*/
         fonte = new BitmapFont();
         fonte.setColor(Color.WHITE);
         fonte.getData().setScale(6);
+
+        passaros = new Texture[3];
+        passaros[0] = new Texture("passaro1.png");
+        passaros[1] = new Texture("passaro2.png");
+        passaros[2] = new Texture("passaro3.png");
+
+        fundo = new Texture("fundo.png");
+        canoBaixo = new Texture("cano_baixo.png");
+        canoTopo = new Texture("cano_topo.png");
+
+        larguraDispositivo = Gdx.graphics.getWidth();
+        alturaDispositivo  = Gdx.graphics.getHeight();
+        posicaoInicialVertical = alturaDispositivo / 2;
+        posicaoMovimentoCanoHorizontal = larguraDispositivo;
+        espacoEntreCanos = 300;
+
     }
 
     @Override
-    public void render() {
-        //bate as asas mesmo parado
+    public void render () {
 
         deltaTime = Gdx.graphics.getDeltaTime();
+        variacao += deltaTime * 10;
+        if (variacao > 2) variacao = 0;
 
-        variacao += deltaTime * 10 ;
-        posicaoMovimentoCanoH -= deltaTime * 200;
-        velocidadeQueda++;
+        if( estadoJogo == 0 ){//Não iniciado
 
-        if(variacao > 2) variacao = 0;
-
-        if( Gdx.input.justTouched() ){
-            velocidadeQueda = -15;
-        }
-
-        if(posicaoInicialVertical > 0 || velocidadeQueda < 0 )
-            posicaoInicialVertical = posicaoInicialVertical - velocidadeQueda;
-
-        //Verifica se o cano saiu inteiramente da tela
-        if(posicaoMovimentoCanoH < -canoAlto.getWidth() ){
-            posicaoMovimentoCanoH = largura;
-            alturaEntreCanosRandom = random.nextInt(400) - 200;
-            marcouPonto=false;
-
-            if(posicaoMovimentoCanoH<120){
-                if(!marcouPonto){
-                    pontuacao++;
-                    marcouPonto=true;
-                }
-
+            if( Gdx.input.justTouched() ){
+                estadoJogo = 1;
             }
+
+        }else {
+
+            posicaoMovimentoCanoHorizontal -= deltaTime * 200;
+            velocidadeQueda++;
+
+            if (Gdx.input.justTouched()) {
+                velocidadeQueda = -15;
+            }
+
+            if (posicaoInicialVertical > 0 || velocidadeQueda < 0)
+                posicaoInicialVertical = posicaoInicialVertical - velocidadeQueda;
+
+            //Verifica se o cano saiu inteiramente da tela
+            if (posicaoMovimentoCanoHorizontal < -canoTopo.getWidth()) {
+                posicaoMovimentoCanoHorizontal = larguraDispositivo;
+                alturaEntreCanosRandomica = numeroRandomico.nextInt(400) - 200;
+                marcouPonto = false;
+            }
+
+            //Verifica pontuação
+            if(posicaoMovimentoCanoHorizontal < 120 ){
+                if( !marcouPonto ){
+                    pontuacao++;
+                    marcouPonto = true;
+                }
+            }
+
         }
+
         batch.begin();
 
-
-        batch.draw(fundo, 0, 0, largura, altura);
-        batch.draw( canoAlto, posicaoMovimentoCanoH, altura / 2 + espacoEntreCanos / 2 + alturaEntreCanosRandom );
-        batch.draw(canoBaixo, posicaoMovimentoCanoH, altura / 2 - canoBaixo.getHeight() - espacoEntreCanos / 2 + alturaEntreCanosRandom );
-        batch.draw( passaro[ (int) variacao ] , 120, posicaoInicialVertical );
-        fonte.draw(batch,String.valueOf(pontuacao),largura/2, altura-150);
-
-
+        batch.draw(fundo, 0, 0, larguraDispositivo, alturaDispositivo);
+        batch.draw(canoTopo, posicaoMovimentoCanoHorizontal, alturaDispositivo / 2 + espacoEntreCanos / 2 + alturaEntreCanosRandomica);
+        batch.draw(canoBaixo, posicaoMovimentoCanoHorizontal, alturaDispositivo / 2 - canoBaixo.getHeight() - espacoEntreCanos / 2 + alturaEntreCanosRandomica);
+        batch.draw(passaros[(int) variacao], 120, posicaoInicialVertical);
+        fonte.draw(batch, String.valueOf(pontuacao), larguraDispositivo / 2, alturaDispositivo - 150);
         batch.end();
+
+        passaroCirculo.set(120 + passaros[0].getWidth() / 2, posicaoInicialVertical + passaros[0].getHeight() / 2, passaros[0].getWidth() / 2);
+        retanguloCanoBaixo = new Rectangle(
+            posicaoMovimentoCanoHorizontal, alturaDispositivo / 2 - canoBaixo.getHeight() - espacoEntreCanos / 2 + alturaEntreCanosRandomica,
+            canoBaixo.getWidth(), canoBaixo.getHeight()
+        );
+
+        retanguloCanoTopo = new Rectangle(
+            posicaoMovimentoCanoHorizontal, alturaDispositivo / 2 + espacoEntreCanos / 2 + alturaEntreCanosRandomica,
+            canoTopo.getWidth(), canoTopo.getHeight()
+        );
+
+        //Desenhar formas
+        /*shape.begin( ShapeRenderer.ShapeType.Filled);
+        shape.circle(passaroCirculo.x, passaroCirculo.y, passaroCirculo.radius);
+        shape.rect(retanguloCanoBaixo.x, retanguloCanoBaixo.y, retanguloCanoBaixo.width, retanguloCanoBaixo.height);
+        shape.rect(retanguloCanoTopo.x, retanguloCanoTopo.y, retanguloCanoTopo.width, retanguloCanoTopo.height);
+        shape.setColor(Color.RED);
+        shape.end();*/
+
+        //Teste de colisão
+        if( Intersector.overlaps( passaroCirculo, retanguloCanoBaixo ) || Intersector.overlaps(passaroCirculo, retanguloCanoTopo) ){
+            Gdx.app.log("Colisão", "Houve colisão");
+        }
+
     }
-
-
 }

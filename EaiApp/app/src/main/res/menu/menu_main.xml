@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item android:title="Settings"
+        android:id="@+id/action_settings">
+
+        android:title="@string/action_settings"
+        android:orderInCategory=100
+        android:showAsAction=never
+    </item>
+
+    <item android:title="Sair"
+        android:id="@+id/action_sair">
+
+        android:title="@string/action_settings"
+        android:orderInCategory=200
+        android:showAsAction=never
+    </item>
+
+    <item android:title="Pesquisa"
+        android:icon="@drawable/lupa"
+        app:showAsAction="ifRoom"
+        android:id="@+id/action_pesquisa">
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory=400
+        android:showAsAction=ifRoom
+        android:icon="@drawable/adicionar"
+    </item>
+
+    <item
+        android:title="Adicionar"
+        android:icon="@drawable/adicionar"
+        app:showAsAction="ifRoom"
+        android:id="@+id/action_adicionar">
+
+        android:title="@string/action_settings"
+        android:orderInCategory=400
+        android:showAsAction=ifRoom
+        android:icon="@drawable/adicionar"
+    </item>
+
+
+
+</menu>

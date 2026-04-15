@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "418918212429",
+    "firebase_url": "https://fir-app-6caaa-default-rtdb.firebaseio.com",
+    "project_id": "fir-app-6caaa",
+    "storage_bucket": "fir-app-6caaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418918212429:android:e85b9126098bf2b08fcd04",
+        "android_client_info": {
+          "package_name": "com.cursoandroid.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgo2MTqrfV4bnHL_5LhYkmamoJ7TKr--o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
