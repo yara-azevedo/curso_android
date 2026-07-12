@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/layout_activity_login.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/drawable_usuario.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/drawable/usuario.png"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/menu_menu_main.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/layout_activity_cadastro.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/layout/activity_cadastro.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/drawable_fundo_btn.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/drawable/fundo_btn.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/drawable_fundo_txt.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/drawable/fundo_txt.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/drawable_background_degrade.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/drawable/background_degrade.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/drawable_logo.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/drawable/logo.png"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-31:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-33:/mipmap-hdpi/ic_launcher.png"
+    }
+]

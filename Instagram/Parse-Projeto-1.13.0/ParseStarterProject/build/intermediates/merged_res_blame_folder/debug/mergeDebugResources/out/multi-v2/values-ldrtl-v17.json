@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-29:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\b6e1e719f1b6e1988b6708a630722529\\transformed\\material-1.10.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}

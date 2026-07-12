@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-29:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\8689cc3b3f82ac233923cf38c993e9d4\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}
