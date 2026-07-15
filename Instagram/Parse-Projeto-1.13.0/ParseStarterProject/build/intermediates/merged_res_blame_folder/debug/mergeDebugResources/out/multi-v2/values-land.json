@@ -4,7 +4,7 @@
             "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-29:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\8689cc3b3f82ac233923cf38c993e9d4\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\7e0a3eceb8ff25cdd931b393df4e4238\\transformed\\appcompat-1.7.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\b6e1e719f1b6e1988b6708a630722529\\transformed\\material-1.10.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\48dacf5dfb525593e9b507801a557a99\\transformed\\material-1.12.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

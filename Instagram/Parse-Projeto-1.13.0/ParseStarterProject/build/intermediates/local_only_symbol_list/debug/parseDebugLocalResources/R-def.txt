@@ -1,24 +1,29 @@
 R_DEF: Internal format may change without notice
 local
+color colorPrimary
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 drawable background_degrade
 drawable fundo_btn
 drawable fundo_txt
+drawable instagramlogo
 drawable logo
 drawable usuario
-id action_settings
-id btn_cadastrar
+id action_compartilhar
+id action_configuraçoes
+id action_sair
 id btn_logar
 id et_email
 id et_senha
 id et_usuario
 id imageView
 id main
+id toolbar_principal
 id txt_cadastrar
 layout activity_cadastro
 layout activity_login
 layout activity_main
+layout toolbar
 menu menu_main
 mipmap ic_launcher
 string action_settings

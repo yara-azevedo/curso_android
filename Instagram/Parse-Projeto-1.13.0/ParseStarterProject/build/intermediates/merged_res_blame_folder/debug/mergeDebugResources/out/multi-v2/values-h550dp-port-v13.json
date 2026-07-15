@@ -4,13 +4,13 @@
             "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-29:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\b6e1e719f1b6e1988b6708a630722529\\transformed\\material-1.10.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\48dacf5dfb525593e9b507801a557a99\\transformed\\material-1.12.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "76",
-                        "endOffsets": "127"
+                        "endColumns": "64",
+                        "endOffsets": "115"
                     }
                 }
             ]
