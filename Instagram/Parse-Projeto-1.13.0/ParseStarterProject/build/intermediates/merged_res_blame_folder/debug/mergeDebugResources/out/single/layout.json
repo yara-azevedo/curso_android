@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\lista_postagem.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\lista_postagem.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\content_feed_usuarios.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\content_feed_usuarios.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-mergeDebugResources-43:/layout/activity_user_factivity.xml",
+        "source": "com.parse.starter.ParseStarterProject-main-46:/layout/activity_user_factivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\lista_user.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\lista_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\activity_cadastro.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\activity_user_factivity.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_user_factivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\fragment_usuarios.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_usuarios.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\tabs_view.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\tabs_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\toolbar.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-mergeDebugResources-43:\\layout\\activity_feed_usuarios.xml",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_feed_usuarios.xml"
+    }
+]

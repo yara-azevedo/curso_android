@@ -9,14 +9,9 @@
 package com.parse.starter;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseUser;
-import com.parse.SaveCallback;
 
 
 public class StarterApplication extends Application {
@@ -36,11 +31,9 @@ public class StarterApplication extends Application {
     .build()
     );
 
-
-    //ParseUser.enableAutomaticUser();
+    // Habilita o acesso de leitura pública para que usuários apareçam na lista
     ParseACL defaultACL = new ParseACL();
-    // Optionally enable public read access.
-    // defaultACL.setPublicReadAccess(true);
+    defaultACL.setPublicReadAccess(true); 
     ParseACL.setDefaultACL(defaultACL, true);
   }
 }

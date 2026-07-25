@@ -9,8 +9,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context=".activity.MainActivity">
-    <item android:id="@+id/action_configuraçoes"
+      tools:context=".activity.MainActivity"
+    >
+    <item android:id="@+id/action_configuracoes"
           android:title="Configurações"
           android:orderInCategory="100"
           app:showAsAction="never"/>
@@ -19,7 +20,8 @@
         android:orderInCategory="100"
         app:showAsAction="never"/>
     <item android:id="@+id/action_compartilhar"
+        android:icon="@drawable/camera2"
         android:title="Compartilhar"
         android:orderInCategory="100"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 </menu>

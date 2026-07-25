@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-29:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.parse.starter.ParseStarterProject-mergeDebugResources-42:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\yaraz\\.gradle\\caches\\8.8\\transforms\\48dacf5dfb525593e9b507801a557a99\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",

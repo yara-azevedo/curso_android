@@ -1,66 +1,138 @@
 [
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\layout_toolbar.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\layout\\toolbar.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_usuario.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\usuario.png"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_camera_icon.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\camera_icon.png"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_activity_user_factivity.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_user_factivity.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_fundo_btn.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\fundo_btn.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_fragment_usuarios.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_usuarios.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_background_degrade.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\background_degrade.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_lista_postagem.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\lista_postagem.xml"
     },
     {
-        "merged": "com.parse.starter.ParseStarterProject-debug-31:/menu_menu_main.xml.flat",
-        "source": "com.parse.starter.ParseStarterProject-main-33:/menu/menu_main.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_fundo_btn.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\fundo_btn.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\logo.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_lista_user.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\lista_user.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_fundo_txt.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\fundo_txt.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\menu\\menu_main.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_instagramlogo.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\instagramlogo.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\layout_activity_cadastro.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\layout\\activity_cadastro.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_activity_cadastro.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_cadastro.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_user2.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\user2.png"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-31:\\drawable_usuario.png.flat",
-        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-33:\\drawable\\usuario.png"
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_camera2.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\camera2.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_instagramlogo.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\instagramlogo.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_imagem1.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\imagem1.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_fragment_first.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_home2.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\home2.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_home.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_background_degrade.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\background_degrade.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_user.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_activity_feed_usuarios.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_feed_usuarios.xml"
+    },
+    {
+        "merged": "com.parse.starter.ParseStarterProject-debug-44:/layout_activity_user_factivity.xml.flat",
+        "source": "com.parse.starter.ParseStarterProject-main-46:/layout/activity_user_factivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_tabs_view.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\tabs_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\drawable_fundo_txt.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\drawable\\fundo_txt.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-debug-44:\\layout_content_feed_usuarios.xml.flat",
+        "source": "C:\\Users\\yaraz\\.gradle\\daemon\\8.8\\com.parse.starter.ParseStarterProject-main-46:\\layout\\content_feed_usuarios.xml"
     }
 ]
